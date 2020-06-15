@@ -2,7 +2,7 @@
 pagetitle: Gesellschaftsmonitoring COVID19, Daten Volksschulamt
 ---
 
-![](../bildungsmonitoringZH.github.io/assets/ktzh_bi_logo_de-300x88.jpg)
+![](https://github.com/bildungsmonitoringZH/bildungsmonitoringZH.github.io/raw/master/assets/ktzh_bi_logo_de-300x88.jpg)
 
 # Gesellschaftsmonitoring COVID19, Daten Volksschulamt
 

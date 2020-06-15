@@ -1,7 +1,7 @@
 # prepare Wiki VSA data for monitoring covid19
 #
 # Authors: Flavian Imlig <flavian.imlig@bi.zh.ch>
-# Date: 8.05.2020
+# Date: 15.06.2020
 ###############################################################################
 
 readMeta <- function(file = 'data/wiki_meta.json')
@@ -21,8 +21,11 @@ loadSingleFile <- function(file)
     data_toc <- lubridate::dmy(str_c('1', data_nm, sep = '. '), quiet = TRUE) %>%
         purrr::set_names(data_nm) %>%
         na.omit()
+    data_start_row <- purrr::imap_int(data_toc, ~openxlsx::read.xlsx(xlsxFile = file, sheet = .y, skipEmptyRows = FALSE) %>%
+                                      pull(1) %>%
+                                      str_which(pattern = '^Day$')) + 1
     
-    data_raw <- purrr::imap(data_toc, ~openxlsx::read.xlsx(xlsxFile = file, sheet = .y, startRow = 5) %>%
+    data_raw <- purrr::imap(data_toc, ~openxlsx::read.xlsx(xlsxFile = file, sheet = .y, startRow = data_start_row[[.y]], check.names = TRUE) %>%
                                 mutate('date_first' := .x))
     ctrl_names <- map(data_raw, ~names(.x))
     assert_that(all(map_lgl(ctrl_names[-1], ~identical(ctrl_names[[1]], .x))))
@@ -33,7 +36,7 @@ loadSingleFile <- function(file)
                       lubridate::dmy_hms() %>%
                       as.POSIXct(),
                   'date_last' := max(.data$date),
-                  'value' := as.integer(round(.data$Visits)))
+                  'value' := as.integer(round(.data$Hits)))
     return(data_t)
 }
 
@@ -42,8 +45,6 @@ getData <- function(directory = 'data')
     # parse argument
     assert_that(is.string(directory))
     assert_that(is.dir(directory))
-    
-    
     
     # get all files
     files <- list.files(path = directory, pattern = '^wiki_\\d{6}.xlsx$', full.names = TRUE) %>%
