@@ -13,6 +13,15 @@ Maja Stoll, <maja.stoll@bi.zh.ch>
 
 Das Ziel des Monitorings Covid19 im Bildungsbereich durch die Bildungsdirektion des Kantons Zürich ist eine konsistente und valide Datengrundlage zu den Covid19-Fällen und den Personen in Quarantäne. Diese Datengrundlage soll alle öffentlichen Schulen von Kindergarten bis Sekundarstufe II im Kanton Zürich abdecken.
 
+## Verantworung und Zuständigkeiten
+
+Gesamtverwantwortung: Oliver Shammas
+Verantwortliche VSA: Yvonne Kind
+Verantwortliche MBA: --
+Verantwortliche BP: Sybille Bayard
+
+Beteiligte: 
+
 ## Daten
 
 Die im Monitoring Covid19 im Bildungsbereich erhobenen Daten stellen einen Zusammenzug der Daten der einzelnen Schulen bzw. Schuleinheiten dar. 
