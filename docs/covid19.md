@@ -7,6 +7,7 @@ pagetitle: Monitoring Covid19 im Bildungsbereich
 # Monitoring Covid19 im Bildungsbereich
 
 Flavian Imlig, <flavian.imlig@bi.zh.ch>
+Maja Stoll, <maja.stoll@bi.zh.ch>
 
 ## Ziel
 
@@ -67,17 +68,17 @@ Personen, die unter mehreren Anstellungen mindestens eine als Lehrperson haben, 
 
 ### Leitsätze zum Eintragen der Daten
 
+- Pro Schule bzw. Schuleinheit wird ein [Meldeformular](#) geführt.
+
 - Die Felder __Schulcode__, __Schulname__, __E-Mail-Adresse(n)__, __Datum__, __Rolle__ und __Stufe__ sind Pflichtfelder. Sie müssen immer mit einen Wert enthalten.
 
 - Die Felder __bestätigte Fälle kumuliert__, __bestätigte Fälle neu__, __in Quarantäne aktuell__ und __in Quarantäne neu__ sind die Felder für die Fall- und Quarantänezahlen. Hier ist es zentral, dass nur Werte eingetragen werden, die mit der Felddefinition übereinstimmen. Es müssen nicht alle vier Felder ausgefüllt sein, sondern nur jene für die es Daten gibt.
 
 - Das Feld __Bemerkungen__ dient der Ablage von Zusatzinformationen. Es muss nur bei Bedarf ausgefüllt werden. In diesem Feld können bespielsweise Hinweise auf bekannte Ansteckungsorte oder auf Quarantänegründe gemacht werden.
 
-- Das [Meldeformular](#) wird immer pro Schule bzw. Schuleinheit ausgefüllt.
-
 - Im [Meldeformular](#) werden Zeilen hinzugefügt und bei Bedarf angepasst. Im Formular werden Daten nur in absoluten Ausnahmefällen und in Absprache mit der zuständigen [Ansprechperson](#ansprechpersonen) gelöscht.
 
-## Vorgehen bei positiven Covid19-Fällen und bei Personen in Quarantäne
+## Erfassungsprozess (Variante A)
 
 ### beim ersten Fall in einer Schule
 
